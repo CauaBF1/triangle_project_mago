@@ -1,3 +1,10 @@
+"""
+Cauã Borges Faria - 834437
+Nicolas Magno - 834054
+Lucas Rodrigues - 834724
+https://github.com/CauaBF1/triangle_project_mago
+"""
+
 from triangle import Triangle, TriangleType
 
 # a + b > c

@@ -1,4 +1,4 @@
-#!/Users/vini/Development/python_sandbox/triangle_problem/venv/bin/python3
+#!/home/borgescaua/faculdade/ES2/aula_triangulo/triangle_project_mago/venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys

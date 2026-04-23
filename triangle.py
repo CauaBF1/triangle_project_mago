@@ -11,13 +11,16 @@ class TriangleType(Enum):
 
 @dataclass(frozen=True, slots=True)
 class Triangle:
-    side1: int
-    side2: int
-    side3: int
+    side1: float
+    side2: float
+    side3: float
 
     @property
     def type(self) -> TriangleType:
         a, b, c = self.side1, self.side2, self.side3
+        # Verifica se algum lado é um booleano
+        if isinstance(a, bool) or isinstance(b, bool) or isinstance(c, bool):
+            return TriangleType.INVALID
 
         if a <= 0 or b <= 0 or c <= 0:
             return TriangleType.INVALID
@@ -28,3 +31,4 @@ class Triangle:
         if a == b or a == c or b == c:
             return TriangleType.ISOSCELES
         return TriangleType.SCALENE
+
